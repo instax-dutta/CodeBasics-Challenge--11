@@ -1,0 +1,184 @@
+Question 1: List top 5/bottom 5 constituencies of 2014 and 2019 in terms of voter turnout ratio
+
+Top 5 constituencies with highest voter turnout ratio in 2014:
+         state       pc_name                candidate sex   age category party  ... general_votes  postal_votes  total_votes  total_electors  state_name abbreviation Turnout_Ratio_2014
+4361  Nagaland      Nagaland              NEIPHIU RIO   M  63.0       ST   NPF  ...        712888           484       713372         1182972    Nagaland           NL           0.603034
+5881   Tripura  Tripura East       JITENDRA CHAUDHURY   M  57.0       ST   CPM  ...        620251          3520       623771         1140276     Tripura           TR           0.547035
+5868   Tripura  Tripura West      SANKAR PRASAD DATTA   M  56.0      GEN   CPM  ...        667086          4579       671665         1248546     Tripura           TR           0.537958
+1777   Gujarat      Vadodara            NARENDRA MODI   M  63.0      GEN   BJP  ...        841592          3872       845464         1638321     Gujarat           GJ           0.516055
+1818   Gujarat         Surat  DARSHANA VIKRAM JARDOSH   F  53.0      GEN   BJP  ...        717429           983       718412         1484068     Gujarat           GJ           0.484083
+
+[5 rows x 15 columns]
+
+Bottom 5 constituencies with lowest voter turnout ratio in 2014:
+           state        pc_name       candidate sex   age category party party_symbol  general_votes  postal_votes  total_votes  total_electors  state_name abbreviation  Turnout_Ratio_2014
+5066  Tamil Nadu  Chennai South    S. VEERAMANI   M  63.0      GEN   IND  Black Board            105             0          105         1795776  Tamil Nadu           TN            0.000058
+5057  Tamil Nadu  Chennai South      LOGANATHAN   M  46.0      GEN   IND        Table            117             0          117         1795776  Tamil Nadu           TN            0.000065
+5072  Tamil Nadu  Chennai South       A. MAGESH   M  31.0      GEN   IND       Funnel            121             0          121         1795776  Tamil Nadu           TN            0.000067
+5048  Tamil Nadu  Chennai South  RAJINI NIVETHA   F  43.0      GEN   IND   CALCULATOR            140             0          140         1795776  Tamil Nadu           TN            0.000078
+1950     Haryana          Hisar        SITA RAM   M  34.0      GEN   IND  CHESS BOARD            127             1          128         1517606     Haryana           HR            0.000084
+
+Top 5 constituencies with highest voter turnout ratio in 2019:
+                 state         pc_name           candidate   sex   age category party  ... general_votes  postal_votes  total_votes  total_electors        state_name abbreviation Turnout_Ratio_2019
+2505            Kerala         Wayanad        Rahul Gandhi  MALE  48.0  GENERAL   INC  ...        705034          1333       706367         1359679            Kerala           KL           0.519510
+3012    Madhya Pradesh     HOSHANGABAD   UDAY PRATAP SINGH  MALE  54.0  GENERAL   BJP  ...        876911          1016       877927         1706141    Madhya Pradesh           MP           0.514569
+1827  Himachal Pradesh          Kangra       Kishan Kapoor  MALE  67.0       ST   BJP  ...        712133         13085       725218         1427338  Himachal Pradesh           HP           0.508091
+1841  Himachal Pradesh           Mandi  RAM SWAROOP SHARMA  MALE  60.0  GENERAL   BJP  ...        638441          8748       647189         1281462  Himachal Pradesh           HP           0.505040
+2159         Karnataka  Uttara Kannada    ANANTKUMAR HEGDE  MALE  51.0  GENERAL   BJP  ...        783211          2831       786042         1556599         Karnataka           KA           0.504974
+
+[5 rows x 15 columns]
+
+Bottom 5 constituencies with lowest voter turnout ratio in 2019:
+          state    pc_name             candidate   sex   age category party   party_symbol  general_votes  postal_votes  total_votes  total_electors state_name abbreviation  Turnout_Ratio_2019
+8097  Telangana  Nizamabad  SURAKANTA RAJA REDDY  MALE  56.0  GENERAL   IND       Triangle             84             0           84         1553385  Telangana           TG            0.000054
+8039  Telangana  Nizamabad          B. BALA RAJU  MALE  39.0       SC   IND         Bottle            106             0          106         1553385  Telangana           TG            0.000068
+8066  Telangana  Nizamabad               RAJANNA  MALE  55.0  GENERAL   IND  Skipping Rope            107             0          107         1553385  Telangana           TG            0.000069
+8082  Telangana  Nizamabad             M. SHEKAR  MALE  35.0       SC   IND            Pot            108             0          108         1553385  Telangana           TG            0.000070
+8056  Telangana  Nizamabad        D. MUTHA REDDY  MALE  31.0  GENERAL   IND     Safety Pin            109             0          109         1553385  Telangana           TG            0.000070
+
+Question 2: List top 5/bottom 5 states of 2014 and 2019 in terms of voter turnout ratio
+
+Top 5 states with highest voter turnout ratio in 2014:
+abbreviation
+NL    0.219555
+DD    0.156014
+MZ    0.154237
+LD    0.123733
+AR    0.122086
+Name: Turnout_Ratio_2014, dtype: float64
+
+Bottom 5 states with lowest voter turnout ratio in 2014:
+abbreviation
+NL    0.219555
+DD    0.156014
+MZ    0.154237
+LD    0.123733
+AR    0.122086
+Name: Turnout_Ratio_2014, dtype: float64
+
+Top 5 states with highest voter turnout ratio in 2019:
+abbreviation
+NL    0.165822
+DD    0.143698
+ML    0.133442
+LD    0.121683
+AR    0.116943
+Name: Turnout_Ratio_2019, dtype: float64
+
+Bottom 5 states with lowest voter turnout ratio in 2019:
+abbreviation
+NL    0.165822
+DD    0.143698
+ML    0.133442
+LD    0.121683
+AR    0.116943
+Name: Turnout_Ratio_2019, dtype: float64
+
+Question 3: Which constituencies have elected the same party for two consecutive elections, rank them by % of votes to that winning party in 2019
+
+Constituencies that have elected the same party for two consecutive elections, ranked by % of votes to the winning party in 2019:
+                 state      pc_name            candidate_x sex_x  age_x category_x  ... postal_votes_y total_votes_y  total_electors_y    state_name_y  abbreviation_y  Turnout_Ratio_2019
+50924   Madhya Pradesh       INDORE  SUMITRA MAHAJAN (TAI)     F   70.0        GEN  ...           1745       1068569           2350580  Madhya Pradesh              MP            0.454598
+6236             Assam      Gauhati     BIJOYA CHAKRAVARTY     F   75.0        GEN  ...           1780       1008936           2181319           Assam              AS            0.462535
+80628        Rajasthan  Chittorgarh  CHANDRA PRAKASH JOSHI     M   38.0        GEN  ...           2996        982942           2015911       Rajasthan              RJ            0.487592
+23999          Gujarat      Navsari            C. R. PATIL     M   59.0        GEN  ...           3309        972739           1971658         Gujarat              GJ            0.493361
+104968   Uttar Pradesh    Ghaziabad      VIJAY KUMAR SINGH     M   62.0        GEN  ...           1927        944503           2728978   Uttar Pradesh              UP            0.346101
+
+[5 rows x 28 columns]
+
+Question 4: Which constituencies have voted for different parties in two elections (list top 10 based on difference (2019-2014) in winner vote percentage in two elections)
+
+Top 10 constituencies that have voted for different parties in two elections, based on the difference in winner vote percentage in 2019 compared to 2014:
+                state pc_name                            candidate_x sex_x  age_x  ... total_electors_y    state_name_y abbreviation_y  Turnout_Ratio_2019  Vote_Percentage_Difference
+51050  Madhya Pradesh  INDORE                            HARISH SAHU     M   49.0  ...          2350580  Madhya Pradesh             MP            0.454598                     1066424
+51029  Madhya Pradesh  INDORE                       RAMCHANDR PARMAR     M   55.0  ...          2350580  Madhya Pradesh             MP            0.454598                     1066347
+51323  Madhya Pradesh  INDORE              SANTOSH KUMAR DEEN BANDHU     M   48.0  ...          2350580  Madhya Pradesh             MP            0.454598                     1066307
+51071  Madhya Pradesh  INDORE  AJEET KUMAR JAIN PATWA (DHARTI PAKAD)     M   59.0  ...          2350580  Madhya Pradesh             MP            0.454598                     1066271
+51008  Madhya Pradesh  INDORE                            MAMTA BHATI     F   44.0  ...          2350580  Madhya Pradesh             MP            0.454598                     1066246
+
+[5 rows x 29 columns]
+
+Question 5: Top 5 candidates based on margin difference with runners in 2014 and 2019
+
+Top 5 candidates with the highest margin difference with runners in 2014:
+               state      pc_name              candidate sex   age category party party_symbol  general_votes  postal_votes  total_votes  total_electors      state_name abbreviation  Turnout_Ratio_2014
+4716       Rajasthan       Jaipur       RAMCHARAN BOHARA   M  56.0      GEN   BJP        Lotus         859973          3385       863358         1957820       Rajasthan           RJ            0.440979
+3326  Madhya Pradesh       INDORE  SUMITRA MAHAJAN (TAI)   F  70.0      GEN   BJP        Lotus         854326           646       854972         2115303  Madhya Pradesh           MP            0.404184
+1777         Gujarat     Vadodara          NARENDRA MODI   M  63.0      GEN   BJP        Lotus         841592          3872       845464         1638321         Gujarat           GJ            0.516055
+1827         Gujarat      Navsari            C. R. PATIL   M  59.0      GEN   BJP        Lotus         818367          2464       820831         1764622         Gujarat           GJ            0.465160
+1559         Gujarat  Gandhinagar             L.K.ADVANI   M  86.0      GEN   BJP        Lotus         770118          3421       773539         1733972         Gujarat           GJ            0.446108
+
+Top 5 candidates with the highest margin difference with runners in 2019:
+               state      pc_name              candidate     sex   age category party  ... general_votes  postal_votes  total_votes  total_electors      state_name abbreviation Turnout_Ratio_2019
+3132  Madhya Pradesh       INDORE        SHANKAR LALWANI    MALE  57.0  GENERAL   BJP  ...       1066824          1745      1068569         2350580  Madhya Pradesh           MP           0.454598
+433            Assam      Gauhati              QUEEN OJA  FEMALE  67.0  GENERAL   BJP  ...       1007156          1780      1008936         2181319           Assam           AS           0.462535
+4850       Rajasthan  Chittorgarh  Chandra Prakash Joshi    MALE  43.0  GENERAL   BJP  ...        979946          2996       982942         2015911       Rajasthan           RJ           0.487592
+1559         Gujarat      Navsari            C. R. Patil    MALE  64.0  GENERAL   BJP  ...        969430          3309       972739         1971658         Gujarat           GJ           0.493361
+5962   Uttar Pradesh    Ghaziabad      Vijay Kumar Singh    MALE  67.0  GENERAL   BJP  ...        942576          1927       944503         2728978   Uttar Pradesh           UP           0.346101
+
+[5 rows x 15 columns]
+
+Question 6: % Split of votes of parties between 2014 vs 2019 at national level
+
+Percentage split of votes of parties between 2014 and 2019 at national level:
+party
+A S P           NaN
+AAAP     -75.431609
+AABHAP          NaN
+AACP            NaN
+AAHPty          NaN
+            ...    
+skd             NaN
+sps             NaN
+ssrd       2.895292
+svjn            NaN
+swbi            NaN
+Name: general_votes, Length: 899, dtype: float64
+
+Question 7: % Split of votes of parties between 2014 vs 2019 at state level
+
+Percentage split of votes of parties between 2014 and 2019 at state level:
+abbreviation  party  
+AN            AAAP      -23.838926
+              AIFB             NaN
+              AINHCP           NaN
+              AITC      -24.791940
+              BJP         3.179948
+                           ...    
+WB            SWJP      -64.525192
+              TRMRPPI          NaN
+              UTSAP            NaN
+              WPOI      -52.014591
+              grac        1.420651
+Name: general_votes, Length: 1945, dtype: float64
+
+Question 8: List top 5 constituencies for two major national parties where they have gained vote share in 2019 as compared to 2014
+
+Top 5 constituencies for two major national parties where they have gained vote share in 2019 compared to 2014:
+                  state         pc_name          candidate_x sex_x  age_x category_x  ... postal_votes_y total_votes_y  total_electors_y       state_name_y  abbreviation_y  Turnout_Ratio_2019
+11       Andhra Pradesh          Aruku   GUMMIDI SANDHYARANI     F   41.0         ST  ...           1938        338101           1451418     Andhra Pradesh              AP            0.232945
+2948     Andhra Pradesh        Bapatla       MALYADRI SRIRAM     M   60.0         SC  ...           4789        582192           1468671     Andhra Pradesh              AP            0.396407
+3684     Andhra Pradesh         Kurnool           B.T. NAIDU     M   42.0        GEN  ...           3324        456395           1573009     Andhra Pradesh              AP            0.290141
+4884     Andhra Pradesh        Rajampet     D.  PURANDESWARI     F   53.0        GEN  ...           4217        433927           1546938     Andhra Pradesh              AP            0.280507
+5068  Arunachal Pradesh  ARUNACHAL WEST         KIREN RIJIJU     M   42.0         ST  ...           9302        225796            463775  Arunachal Pradesh              AR            0.486865
+
+[5 rows x 28 columns]
+
+Question 9: List top 5 constituencies for two major national parties where they have lost vote share in 2019 as compared to 2014
+
+Top 5 constituencies for two major national parties where they have lost vote share in 2019 compared to 2014:
+              state       pc_name                    candidate_x sex_x  age_x category_x  ... postal_votes_y total_votes_y  total_electors_y    state_name_y  abbreviation_y  Turnout_Ratio_2019
+12   Andhra Pradesh        Aruku             GUMMIDI SANDHYARANI     F   41.0         ST  ...            289         17867           1451418  Andhra Pradesh              AP            0.012310
+152  Andhra Pradesh    Srikakulam       RAMMOHAN NAIDU KINJARAPU     M   27.0        GEN  ...           5331        534544           1553860  Andhra Pradesh              AP            0.344010
+155  Andhra Pradesh    Srikakulam       RAMMOHAN NAIDU KINJARAPU     M   27.0        GEN  ...           1033          8390           1553860  Andhra Pradesh              AP            0.005399
+242  Andhra Pradesh  Vizianagaram  ASHOK GAJAPATHI RAJU PUSAPATI     M   62.0        GEN  ...           3075        530382           1503980  Andhra Pradesh              AP            0.352652
+245  Andhra Pradesh  Vizianagaram  ASHOK GAJAPATHI RAJU PUSAPATI     M   62.0        GEN  ...            364          7266           1503980  Andhra Pradesh              AP            0.004831
+
+[5 rows x 28 columns]
+
+Question 10: Which constituency has voted the most for NOTA?
+
+Constituency that has voted the most for NOTA:
+               state pc_name        candidate   sex   age category party party_symbol  general_votes  postal_votes  total_votes  total_electors      state_name abbreviation  Turnout_Ratio_2019
+3132  Madhya Pradesh  INDORE  SHANKAR LALWANI  MALE  57.0  GENERAL   BJP        Lotus        1066824          1745      1068569         2350580  Madhya Pradesh           MP            0.454598
+
